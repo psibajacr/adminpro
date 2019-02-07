@@ -27,7 +27,7 @@ export class ModalUploadComponent implements OnInit {
       this.cerrarModal();
     })
     .catch(err => {
-      console.error('Error en la carga...');
+      console.error('Error en la carga... ');
     });
   }
 
@@ -46,7 +46,7 @@ export class ModalUploadComponent implements OnInit {
     this.imagenSubir = archivo;
 
     let reader = new FileReader();
-    let urlImagenTemp = reader.readAsDataURL(archivo);
+    reader.readAsDataURL(archivo);
     reader.onloadend = () => {
       this.imagenTemp = reader.result as string;
     };

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/models/usuario.model';
 import { UsuarioService } from 'src/app/services/service.index';
 import { ModalUploadService } from 'src/app/components/modal-upload/modal-upload.service';
-//import swal from 'sweetalert';
 
 declare var swal: any;
 
@@ -40,7 +39,6 @@ export class UsuariosComponent implements OnInit {
         this.totalRegistros = resp.total;
         this.usuarios = resp.usuarios;
         this.cargando = false;
-        console.log(this.cargando);
       });
   }
 
